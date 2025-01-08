@@ -57,7 +57,7 @@ void AMyActor11::Move()
 		double distance = Distance({curX,curY}, {nextX,nextY});
 		SetActorLocation({nextX,nextY,curZ});
 		UE_LOG(LogTemp, Display, TEXT("Current Location: (%f,%f)"), nextX,nextY);
-		UE_LOG(LogTemp, Warning, TEXT("Moved distance: %f"),distance);
+		UE_LOG(LogTemp, Display, TEXT("Moved distance: %f"),distance);
 		CreateEvent();
 		
 	}
@@ -90,7 +90,7 @@ void AMyActor11::CreateEvent()
 	if (Randrange % 2)
 	{
 		TotalEvent++;
-		UE_LOG(LogTemp, Display, TEXT("EventOccured!!"));
+		UE_LOG(LogTemp, Warning, TEXT("EventOccured!!"));
 	}
 	return;
 }
