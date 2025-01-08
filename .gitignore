@@ -1,12 +1,9 @@
 .vs
-Binaries
 Config
 Content
 DerivedDataCache
 Intermediate
 Saved
-CampProject.Target.cs
-CampProjectEditor.Target.cs
 .vsconfig
 CampProject.sln
 CampProject.uproject
